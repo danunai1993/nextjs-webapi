@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { InferGetServerSidePropsType } from 'next'
 import Link from 'next/link'
+import Head from 'next/head'
 import { Card , CardActions , CardContent , CardMedia , Container , Button , Typography , Grid } from '@mui/material'
 
 type Data = { 
@@ -25,6 +26,9 @@ export const getServerSideProps = async () => {
 function Page({ data }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return(
     <div>
+        <head>
+            <title>attraction</title>
+        </head>
         <Container maxWidth="lg">
             <Grid container spacing={2}>
                 {data.map(attraction => (
