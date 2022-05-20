@@ -2,16 +2,6 @@ import * as React from 'react';
 import { InferGetServerSidePropsType } from 'next'
 import Link from 'next/link'
 import { Card , CardActions , CardContent , CardMedia , Container , Button , Typography , Grid } from '@mui/material'
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Avatar from '@mui/material/Avatar';  
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 
 type Data = { 
     id: string,
