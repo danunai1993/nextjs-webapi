@@ -26,9 +26,9 @@ export const getServerSideProps = async () => {
 function Page({ data }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return(
     <div>
-        <head>
+        <Head>
             <title>attraction</title>
-        </head>
+        </Head>
         <Container maxWidth="lg">
             <Grid container spacing={2}>
                 {data.map(attraction => (
