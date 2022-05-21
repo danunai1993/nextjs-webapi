@@ -27,7 +27,8 @@ function Page({ data }: InferGetServerSidePropsType<typeof getServerSideProps>) 
   return(
     <div>
         <Head>
-            <title>attraction</title>
+            <title>attraction - lnwgodrip.dev</title>
+            <link rel="icon" href="/favicon.ico" />
         </Head>
         <Container maxWidth="lg">
             <Grid container spacing={2}>

@@ -38,7 +38,8 @@ const Page = () => {
   return (
     <div>
         <Head>
-            <title>attraction</title>
+            <title>{data.name} - lnwgodrip.dev</title>
+            <link rel="icon" href={data.coverimage} />
         </Head>
         <Container maxWidth="lg">
             <Grid container spacing={2}>
@@ -54,13 +55,13 @@ const Page = () => {
                                 <Typography gutterBottom variant="h5" component="div">
                                     {data.name}
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary" noWrap={true}>
+                                <Typography variant="body2" color="text.secondary">
                                     {data.detail}
                                 </Typography>
                             </CardContent>
                             <CardActions>
-                                <Link href={"/attractions/"+data.id}>
-                                    <Button size="small">Learn More</Button>
+                                <Link href={"/attractions"}>
+                                    <Button size="small">Back to Home</Button>
                                 </Link>
                             </CardActions>
                         </Card>
